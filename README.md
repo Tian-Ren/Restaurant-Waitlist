@@ -21,7 +21,7 @@ Send notification text message
 Host a static website
 
 ## Architecture
-![alt text](Waitlist Architecture.png "Waitlist")
+![screenshots](Waitlist_Architecture.png)
 
 ## Scalability
 Lambda,  S3, SNS,  API  Gateway  and  DynamoDB automatically  scale  to  handle  changes  in  load,  without  needing  to  provision  extra  capacity. 
