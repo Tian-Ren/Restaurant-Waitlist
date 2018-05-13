@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f83a6fd3-4e79-4c9e-9caa-52df1816cd00" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/waitlist/css/style.css" afterPath="$PROJECT_DIR$/waitlist/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/waitlist/index.html" afterPath="$PROJECT_DIR$/waitlist/index.html" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/custom.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/jquery.slimscroll.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/calendar-2/moment.latest.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/calendar-2/pignose.calendar.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/calendar-2/pignose.init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/calendar-2/prism.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/calendar-2/semantic.ui.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/jquery/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/morris-chart/dashboard1-init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/morris-chart/morris-init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/morris-chart/morris.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/lib/morris-chart/raphael-min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/scripts.js" afterPath="$PROJECT_DIR$/waitlist/js/scripts.js" />
-      <change beforePath="$PROJECT_DIR$/waitlist/js/sidebarmenu.js" afterPath="" />
-    </list>
+    <list default="true" id="f83a6fd3-4e79-4c9e-9caa-52df1816cd00" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,12 +162,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526052355175</updated>
-      <workItem from="1526080473691" duration="35863000" />
+      <workItem from="1526080473691" duration="36052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35863000" />
+    <option name="totallyTimeSpent" value="36052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
