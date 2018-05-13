@@ -87,9 +87,11 @@ $(function () {
         var wtList = document.getElementById("waitlist");
         var wlName;
         var idx;
+        var noticePhoneNum;
         for (idx = 0; idx < wtList.rows.length; idx++) {
             if (wtList.rows[idx].cells[2].innerHTML == tableSize) {
                 wlName = wtList.rows[idx].cells[1].innerHTML;
+                noticePhoneNum = wtList.rows[idx].cells[3].innerHTML
                 wtList.deleteRow(idx);
                 break;
             }
@@ -129,7 +131,8 @@ $(function () {
             },
             body: JSON.stringify({
                 "tableNum": tableNum,
-                "tableSize": tableSize
+                "tableSize": tableSize,
+                "phone" : noticePhoneNum
             })
         };
 
@@ -195,7 +198,7 @@ function listWaitlist() {
                 }
                 $("#waitCount").text(waitCount);
                 $("#inUse").text(tableCount);
-                $("#available").text(12 - tableCount);
+                $("#available").text(8 - tableCount);
             });
 
         }).catch(function (err) {
