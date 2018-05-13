@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!--     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png"> -->
     <title>Resterautant Waitlist</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -17,348 +15,254 @@
 
     <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
     <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
-    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet"/>
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet"/>
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
     <!--[if lt IE 9]>
     <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 </head>
 
 <body class="fix-header fix-sidebar">
-    <!-- Preloader - style you can find in spinners.css -->
-    <div class="preloader">
-        <svg class="circular" viewBox="25 25 50 50">
-			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+<!-- Preloader - style you can find in spinners.css -->
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+</div>
+<!-- Main wrapper  -->
+<div id="main-wrapper">
+    <!-- Bread crumb -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-primary">Dashboard</h3></div>
     </div>
-    <!-- Main wrapper  -->
-    <div id="main-wrapper">
-            <!-- Bread crumb -->
-            <div class="row page-titles">
-                <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+    <!-- End Bread crumb -->
+    <!-- Container fluid  -->
+    <div class="container-fluid">
+        <!-- Start Page Content -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card p-30">
+                    <div class="media">
+                        <div class="media-left meida media-middle">
+                            <span><i class="fas fa-utensils f-s-40 color-primary"></i></span>
+                        </div>
+                        <div class="media-body media-text-right">
+                            <h2 id="inUse"></h2>
+                            <p class="m-b-0">Dining</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- End Bread crumb -->
-            <!-- Container fluid  -->
-            <div class="container-fluid">
-                <!-- Start Page Content -->
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fas fa-utensils f-s-40 color-primary"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>10</h2>
-                                    <p class="m-b-0">Table In Use</p>
-                                </div>
-                            </div>
+            <div class="col-md-3">
+                <div class="card p-30">
+                    <div class="media">
+                        <div class="media-left meida media-middle">
+                            <span><i class="fa fa-clipboard-check f-s-40 color-success"></i></span>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-clipboard-check f-s-40 color-success"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>2</h2>
-                                    <p class="m-b-0">Table Available</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-user f-s-40 color-warning"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>5</h2>
-                                    <p class="m-b-0">Customer Waiting</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-archive f-s-40 color-danger"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>00:00:00</h2>
-                                    <p class="m-b-0">Avarage Wait Time</p>
-                                </div>
-                            </div>
+                        <div class="media-body media-text-right">
+                            <h2 id="available"></h2>
+                            <p class="m-b-0">Available</p>
                         </div>
                     </div>
                 </div>
-
-
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-title">
-                                <h4>Table In Use</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Name</th>
-                                                <th>Table No.</th>
-                                                <th>Table Size</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>1</span></td>
-                                                <td><span>6</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/2.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>2</span></td>
-                                                <td><span>2</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/3.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>3</span></td>
-                                                <td><span>2</span></td>
-                                                <td><span class="badge badge-warning">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>4</span></td>
-                                                <td><span>4</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-30">
+                    <div class="media">
+                        <div class="media-left meida media-middle">
+                            <span><i class="fa fa-user f-s-40 color-warning"></i></span>
+                        </div>
+                        <div class="media-body media-text-right">
+                            <h2 id="waitCount"></h2>
+                            <p class="m-b-0">Waiting</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-30">
+                    <div class="media">
+                        <div class="media-left meida media-middle">
+                            <span><i class="fa fa-archive f-s-40 color-danger"></i></span>
+                        </div>
+                        <div class="media-body media-text-right">
+                            <h2 id="doneCount">0</h2>
+                            <p class="m-b-0">Done</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-title">
+                        <h4>Table In Use</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table" id="tableList">
+                                <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Name</th>
+                                    <th>Table No.</th>
+                                    <th>Table Size</th>
+                                    <th>Done</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tableBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-title">
+                        <h4>Waitlist</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table" id="waitlist">
+                                <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Name</th>
+                                    <th>Table Size</th>
+                                    <th>Phone</th>
+                                    <th>Arrive Time</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-outline-primary">
+                    <div class="card-header">
+                        <h4 class="m-b-0 text-white">Add Customer</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="myForm" method="get">
+                            <div class="form-body">
+                                <div class="row p-t-20">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">First Name</label>
+                                            <input type="text" id="firstName" name="firstName" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!--/span-->
+                                    <div class="col-md-6">
+                                        <div class="form-group has-danger">
+                                            <label class="control-label">Last Name</label>
+                                            <input type="text" id="lastName" name="lastName" class="form-control form-control-danger">
+                                        </div>
+                                    </div>
+                                    <!--/span-->
+                                </div>
+                                <!--/row-->
                                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-title">
-                                <h4>Waitlist</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Name</th>
-                                                <th>Table Size</th>
-                                                <th>Phone</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Table Size</label>
+                                            <select class="form-control custom-select" id="tableSize" name="tableSize">
+                                                <option disabled selected value></option>
+                                                <option value="2">2</option>
+                                                <option value="4">4</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--/span-->
 
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>4</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/2.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>2</span></td>
-                                                <td><span>2</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/3.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>2</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-warning">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="round-img">
-                                                        <a href=""><img src="images/avatar/4.jpg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                                <td>John Abraham</td>
-                                                <td><span>6</span></td>
-                                                <td><span>456 pcs</span></td>
-                                                <td><span class="badge badge-success">Done</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <!--/span-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Phone</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!--/span-->
+                                    <!--/span-->
                                 </div>
+                                <!--/row-->
+
+                                <!--/row-->
                             </div>
-                        </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-success" id="submit"><i class="fa fa-check"></i> Save</button>
+                                <button type="reset" class="btn btn-inverse">Cancel</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-
-                                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card card-outline-primary">
-                            <div class="card-header">
-                                <h4 class="m-b-0 text-white">Add Customer</h4>
-                            </div>
-                            <div class="card-body">
-                                <form action="#">
-                                    <div class="form-body">
-                                        <div class="row p-t-20">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">First Name</label>
-                                                    <input type="text" id="firstName" class="form-control">
-                                                  </div>
-                                            </div>
-                                            <!--/span-->
-                                            <div class="col-md-6">
-                                                <div class="form-group has-danger">
-                                                    <label class="control-label">Last Name</label>
-                                                    <input type="text" id="lastName" class="form-control form-control-danger">
-                                                    </div>
-                                            </div>
-                                            <!--/span-->
-                                        </div>
-                                        <!--/row-->
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Table Size</label>
-                                                    <select class="form-control custom-select">
-                                                        <option disabled selected value></option>
-                                                        <option value="">2</option>
-                                                        <option value="">4</option>
-                                                        <option value="">6</option>
-                                                    </select>
-                                                   </div>
-                                            </div>
-                                            <!--/span-->
-                                           
-                                            <!--/span-->
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Phone</label>
-                                                    <input type="tel" id="phone" class="form-control">
-                                                </div>
-                                            </div>
-                                            <!--/span-->
-                                            <!--/span-->
-                                        </div>
-                                        <!--/row-->
-  
-
-                                        <!--/row-->
-                                    </div>
-                                    <div class="form-actions">
-                                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                        <button type="reset" class="btn btn-inverse">Cancel</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-
-                <!-- End PAge Content -->
             </div>
-            <!-- End Container fluid  -->
+
+            <!-- End PAge Content -->
+        </div>
+        <!-- End Container fluid  -->
 
     </div>
-                <!-- footer -->
-            <footer class="footer"> Template designed by Colorlib</footer>
-            <!-- End footer -->
+    <!-- footer -->
+    <footer class="footer"> Template designed by Colorlib</footer>
+    <!-- End footer -->
     <!-- End Wrapper -->
     <!-- All Jquery -->
-    <script src="js/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="js/mine.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="js/lib/bootstrap/js/popper.min.js"></script>
     <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="js/jquery.slimscroll.js"></script>
+    <!-- <script src="js/jquery.slimscroll.js"></script> -->
     <!--Menu sidebar -->
-    <script src="js/sidebarmenu.js"></script>
+    <!-- <script src="js/sidebarmenu.js"></script> -->
     <!--stickey kit -->
     <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
-
-
     <!-- Amchart -->
-     <script src="js/lib/morris-chart/raphael-min.js"></script>
+    <!-- <script src="js/lib/morris-chart/raphael-min.js"></script>
     <script src="js/lib/morris-chart/morris.js"></script>
     <script src="js/lib/morris-chart/dashboard1-init.js"></script>
 
+    <script src="js/lib/calendar-2/moment.latest.min.js"></script>
 
-	<script src="js/lib/calendar-2/moment.latest.min.js"></script>
+<script src="js/lib/calendar-2/semantic.ui.min.js"></script>
+
+<script src="js/lib/calendar-2/prism.min.js"></script>
+     scripit init
+    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script> -->
     <!-- scripit init-->
-    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/prism.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.init.js"></script>
+    <!--        <script src="js/lib/calendar-2/pignose.init.js"></script> -->
 
     <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
     <script src="js/scripts.js"></script>
     <!-- scripit init-->
-
-    <script src="js/custom.min.js"></script>
 
 </body>
 

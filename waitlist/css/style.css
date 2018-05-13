@@ -6907,6 +6907,10 @@ tbody tr td:last-child {
   .footer {
     left: 0;
   }
+
+  tbody tr td:last-child {
+    text-align: right;
+  }
 }
 /*  10 - media screen and (max-width: 320px)
 ---------------------------------------------------------------------- */

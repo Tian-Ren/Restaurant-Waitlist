@@ -28,10 +28,10 @@ $(function() {
 
 
 
-        $(".fix-header .header").stick_in_parent({}), $(".nav-toggler").click(function() {
-            $("body").toggleClass("show-sidebar"), $(".nav-toggler i").toggleClass("mdi mdi-menu"),
-                $(".nav-toggler i").addClass("mdi mdi-close");
-        }),
+        // $(".fix-header .header").stick_in_parent({}), $(".nav-toggler").click(function() {
+        //     $("body").toggleClass("show-sidebar"), $(".nav-toggler i").toggleClass("mdi mdi-menu"),
+        //         $(".nav-toggler i").addClass("mdi mdi-close");
+        // }),
 
 
 
@@ -52,50 +52,50 @@ $(function() {
             }
         }),
 
-        $(function() {
-            $("#sidebarnav").metisMenu();
-        }),
+        // $(function() {
+        //     $("#sidebarnav").metisMenu();
+        // }),
 
-        $(".scroll-sidebar").slimScroll({
-            position: "left",
-            size: "5px",
-            height: "100%",
-            color: "#dcdcdc"
-        }),
+        // $(".scroll-sidebar").slimScroll({
+        //     position: "left",
+        //     size: "5px",
+        //     height: "100%",
+        //     color: "#dcdcdc"
+        // }),
 
-        $(".message-center").slimScroll({
-            position: "right",
-            size: "5px",
-            color: "#dcdcdc"
-        }),
+        // $(".message-center").slimScroll({
+        //     position: "right",
+        //     size: "5px",
+        //     color: "#dcdcdc"
+        // }),
 
-        $(".aboutscroll").slimScroll({
-            position: "right",
-            size: "5px",
-            height: "80",
-            color: "#dcdcdc"
-        }),
+        // $(".aboutscroll").slimScroll({
+        //     position: "right",
+        //     size: "5px",
+        //     height: "80",
+        //     color: "#dcdcdc"
+        // }),
 
-        $(".message-scroll").slimScroll({
-            position: "right",
-            size: "5px",
-            height: "570",
-            color: "#dcdcdc"
-        }),
+        // $(".message-scroll").slimScroll({
+        //     position: "right",
+        //     size: "5px",
+        //     height: "570",
+        //     color: "#dcdcdc"
+        // }),
 
-        $(".chat-box").slimScroll({
-            position: "right",
-            size: "5px",
-            height: "470",
-            color: "#dcdcdc"
-        }),
+        // $(".chat-box").slimScroll({
+        //     position: "right",
+        //     size: "5px",
+        //     height: "470",
+        //     color: "#dcdcdc"
+        // }),
 
-        $(".slimscrollright").slimScroll({
-            height: "100%",
-            position: "right",
-            size: "5px",
-            color: "#dcdcdc"
-        }),
+        // $(".slimscrollright").slimScroll({
+        //     height: "100%",
+        //     position: "right",
+        //     size: "5px",
+        //     color: "#dcdcdc"
+        // }),
 
 
 
@@ -128,4 +128,6 @@ $(function() {
         $('a[data-action="close"]').on("click", function() {
             $(this).closest(".card").removeClass().slideUp("fast");
         });
+
+        
 });
