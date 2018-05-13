@@ -21,7 +21,7 @@ Send notification text message
 Host a static website
 
 ## Architecture
-![architecture](https://cloudcraft.co/view/3be087ce-2231-487a-97e7-631a61b5b401?key=chWPeGfNgEU5UTqNGXXJDA&embed=true)
+![alt tag](https://cloudcraft.co/view/3be087ce-2231-487a-97e7-631a61b5b401?key=chWPeGfNgEU5UTqNGXXJDA&embed=true)
 
 ## Scalability
 Lambda,  S3, SNS,  API  Gateway  and  DynamoDB automatically  scale  to  handle  changes  in  load,  without  needing  to  provision  extra  capacity. 
