@@ -19,7 +19,7 @@ exports.handler = function(event, context, callback) {
         deleteInUse(ids[0]);
         return assignTable(ids[1],requestBody.tableNum);
     }).then(()=>{
-        sendText(requestBody.tableNum);
+        sendText(requestBody.tableNum, requestBody.phone);
         return getRecords();
     }).then(data=>{
         console.log(data);
@@ -78,10 +78,10 @@ function getRecords() {
 
 
 
-function sendText(tableNum) {
+function sendText(tableNum, phoneNum) {
     var params = {
   Message: 'It is your turn. Your assigned table is '+tableNum+'.', 
-  PhoneNumber: '+10000000000'
+  PhoneNumber: '+1'+phoneNum
 };
     sns.publish(params, function(err, data) {
   if (err) console.log(err, err.stack); // an error occurred
